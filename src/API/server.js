@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 const uuidv4 = require('uuid/v4');
 let activeUsers = [];
 
-app.use(express.static(__dirname + '/../../build'));
+app.use('/', express.static(__dirname + '/../../build'));
 
 server.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
