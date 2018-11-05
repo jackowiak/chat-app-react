@@ -4,7 +4,7 @@ let socket;
 
 export const api = {
   open: () => {
-    socket = io("http://localhost:8080");
+    socket = io();
   },
 
   send: (message) => {

@@ -8,6 +8,7 @@ const io = socketIO(server);
 const uuidv4 = require('uuid/v4');
 let activeUsers = [];
 
+app.use(express.static(__dirname + '/../../build'))
 
 io.on('connection', (socket) => {
   console.log('made socket connection', socket.id);
