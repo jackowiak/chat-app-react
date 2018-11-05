@@ -1,0 +1,71 @@
+.login-row {
+    height: 100vh
+}
+
+.userview-row {
+    height: 100vh
+}
+
+.loader-row {
+    height: 100vh;
+}
+
+.message {
+    border-bottom: 2px #ced4da solid;
+    padding: 8px 7px;
+}
+
+.messages {
+    height: 60vh;
+    border: 2px #ced4da solid;
+    margin-bottom: 40px;
+    overflow: auto;
+    border-radius: 0.25rem;
+}
+
+.username {
+    color: #007bff;
+    font-size: 14px;
+}
+
+.date {
+    color: lightgray;
+    font-size: 12px;
+}
+
+.activeusers {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.clearchat {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    border-color: #007bff transparent #007bff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
