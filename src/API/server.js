@@ -3,7 +3,7 @@ const app = express();
 const server = require('http').Server(app);
 const socketIO = require('socket.io');
 const io = socketIO(server);
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 const uuidv4 = require('uuid/v4');
 let activeUsers = [];
