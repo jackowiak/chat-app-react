@@ -1,14 +1,16 @@
 const express = require('express');
+const app = express();
+const server = require('http').Server(app);
 const socketIO = require('socket.io');
-const PORT = process.env.PORT || 8080;
-const server = express()
-  .listen(PORT, () => console.log(`Listening on ${PORT}`));
-
 const io = socketIO(server);
+const PORT = process.env.PORT || 8080;
+
 const uuidv4 = require('uuid/v4');
 let activeUsers = [];
 
-app.use(express.static(__dirname + '/../../build'))
+app.use(express.static(__dirname + '/../../build'));
+
+server.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 io.on('connection', (socket) => {
   console.log('made socket connection', socket.id);
