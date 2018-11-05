@@ -13,7 +13,6 @@
 <hr />
 
 <div>
-  <h3>Usage</h3>
   <h5>Client side</h5>
   <p><code>$ git clone https://github.com/jackowiak/chat-app-react.git</code></p>
   <p><code>$ cd chat-app-react</code></p>
