@@ -2,11 +2,9 @@ import io from 'socket.io-client';
 
 let socket;
 
-let port = process.env.PORT || "http://localhost:8000";
-
 export const api = {
   open: () => {
-    socket = io(port);
+    socket = io();
   },
 
   send: (message) => {
