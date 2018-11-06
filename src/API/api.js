@@ -2,11 +2,9 @@ import io from 'socket.io-client';
 
 let socket;
 
-const port = process.env.NODE_ENV === 'prod' ? '' : 'http://localhost:8000';
-
 export const api = {
   open: () => {
-    socket = io(port);
+    socket = io();
   },
 
   send: (message) => {
